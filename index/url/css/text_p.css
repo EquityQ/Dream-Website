@@ -1,0 +1,141 @@
+.text_p{
+    position: absolute;
+    color: aqua;
+    font-size: 22;
+    left: 25px;
+    top: 30%;
+}
+.text_z{
+    position: absolute;
+    font-size: 25;
+    left: 25px;
+    bottom: 80;
+}
+.a_ref{
+    text-decoration: none;
+    color: white;
+    transition:1s;
+}
+.text_v{
+    position: absolute;
+    font-size: 25;
+    left: 25px;
+    bottom: 25;
+}
+
+.a_ref:hover{
+    color: pink;
+}
+#h1_v{
+    animation: op_change_h1 5s infinite;
+}
+#h1_c{ 
+    animation: op_change_h2 5s infinite;
+}
+@keyframes op_change_h1{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes op_change_h2{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.div_c{
+    background-color: rgba(255, 255, 255, 0);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    
+}
+.div_e{
+    background-color: rgba(255, 255, 255, 0);
+    width: 40%;
+    height: 50%;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    border: 3px solid lightblue;
+}
+
+#close {
+    display: inline-block;
+    width: 30px;
+    height: 4px;
+    background: lightseagreen;
+    transform: rotate(45deg);
+    cursor: pointer;
+    transition: 1s;
+    position: absolute;
+    right: 5;
+    top: 15;
+}
+
+#close::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 4px;
+    background: lightseagreen;
+    transform: rotate(-90deg);
+    transition: 1s;
+}
+#close:hover{
+    background: pink;
+}
+#close:hover::after{
+    background: pink;
+}
+
+#c::placeholder{
+    color: rgba(255, 255, 255, 0.623);
+    font-size: 15;
+    top: 50%;
+    position: absolute;
+    transform: translate(0%,-50%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#e::placeholder{
+    color: rgba(255, 255, 255, 0.623);
+    font-size: 15;
+    top: 50%;
+    position: absolute;
+    transform: translate(0%,-50%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.but{
+    position:absolute;
+    width: 400;
+    left: 50%;
+    top: 330;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+    height: 50;
+    font-size: 18;
+    color: rgb(247, 247, 247);
+    border: 3px solid rgb(196, 251, 255);
+    background-color: rgb(132, 0, 172,0);
+    transition: 1s;
+}
+.but:hover{
+    background-color: rgb(250, 250, 189);
+    border: 3px solid lightskyblue;
+    color: aqua;
+    cursor: pointer;
+}

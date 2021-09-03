@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+}
+.st0{
+    stroke: white;
+    fill: none;
+}
+.ssp{
+    width: 120px;
+    height: 120px;
+    animation: spin 3s infinite;
+    animation-timing-function: linear;
+}
+.ss{
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+}
+@keyframes spin{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(359deg);}
+}
+.pdd{
+    position: absolute;
+    bottom: 12;
+    color: rgba(255, 255, 255, 0.568);
+    font-size: 5;
+    left: 50%;
+    transform: translate(-50%);
+}
+.pdds{
+    position: absolute;
+    color: rgba(255, 255, 255, 0.568);
+    font-size: 5;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 0;
+}

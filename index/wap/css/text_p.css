@@ -1,0 +1,56 @@
+.text_p{
+    position: absolute;
+    color: aqua;
+    font-size: 22;
+    left: 25px;
+    top: 30%;
+}
+.text_z{
+    position: absolute;
+    font-size: 25;
+    left: 25px;
+    bottom: 80;
+}
+.a_ref{
+    text-decoration: none;
+    color: white;
+    transition:1s;
+}
+.text_v{
+    position: absolute;
+    font-size: 13;
+    left: 25px;
+    bottom: 25;
+}
+
+.a_ref:hover{
+    color: pink;
+}
+#h1_v{
+    animation: op_change_h1 5s infinite;
+}
+#h1_c{ 
+    animation: op_change_h2 5s infinite;
+}
+@keyframes op_change_h1{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes op_change_h2{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
